@@ -56,7 +56,8 @@ INSTALLED_APPS = [
     'bdata.apps.BdataConfig',
     'rest_framework',
     'api',
-    'corsheaders'
+    'corsheaders',
+    'payments'
 ]
 
 MIDDLEWARE = [
