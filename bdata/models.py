@@ -3,13 +3,11 @@ from django.db import models
 routes_full = { 
     "M" : "Mumbai",
     "D" : "Delhi",
-    "K" : "Kolkata",
-    "H" : "Hydrerabad",
 }
 
 d = "DEF"
 
-
+  
 class Route(models.Model):
     source = models.CharField(max_length=1)
     destination = models.CharField(max_length=1)
