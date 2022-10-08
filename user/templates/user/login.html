@@ -1,0 +1,42 @@
+{% extends 'bdata/base.html' %}
+{% load static %}
+{% block title %}
+Login
+{% endblock title %}
+<!-- <link src="{% static 'css/style.min.css' %}" rel="stylesheet"> -->
+<link rel="stylesheet" href="css/style.css">
+{% block header-orange %}
+<div class="container" style="justify-content: space-evenly;display: flex; background-color: transparent; border-radius: 4px; align-items: center;margin: auto;">
+  <form action="">
+    
+    <div class="row" style="padding: 10%;display: inline;margin-right: 10px;">
+      
+      
+      <div class="col" style="    font-family: comic sans ms;
+      padding: 12px;
+      margin-top: 10px;">
+        
+        <h3 class="title">Login</h3>
+        <br><br><br>
+
+        <div class="inputBox" style="">
+          <span>Username:</span>
+          <input type="text" style="
+          border: 3px solid black;
+          border-radius: 12px;
+      " placeholder="john deo" id="name">
+        </div>
+        
+        <div class="inputBox">
+          <span>Password:</span>
+          <input type="password" style="
+          border: 3px solid black;
+          border-radius: 12px;
+      " placeholder="" id="name">
+        </div>
+      </div>
+    </div>
+
+
+
+    {% endblock %}

@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from bdata import views
+from user.views import signup,login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +27,8 @@ urlpatterns = [
     path('bus/<int:bus_id>/<int:bpoint>', views.bus, name="bus_details"),
     path('updateloc', views.loc, name="updateloc"),
     path('our_team',views.ot,name='our_team'),
-    path('login',views.login,name='login/'),
-    path('signup',views.signup,name='signup/'),
+    path('signup',signup,name='signup/'),
+    path('login/',login,name='/login')
+    
+   
 ]

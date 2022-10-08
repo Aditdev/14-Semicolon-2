@@ -10,17 +10,9 @@ Get in your bus|Explorians
         <div class="container border rounded border-white" style="border-radius: 2.25rem!important;">
             <form name="find-form" action={% url 'search' %} method="post" style="padding: 20px;margin: 30px;" >
                     {% csrf_token %}
+                    
                     <div class="form-group">
-                        <label>Source</label>
-                        <select name="route" class="form-control" required="" style="background-color: rgb(214, 198, 198);">
-                            <option value="" hidden="">Select your route</option>
-                            {% for route in routes %}
-                            <option value={{ route.id }}>{{ route }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Destination</label>
+                        <label>Your route</label>
                         <select name="route" class="form-control" required="" style="background-color:rgb(214, 198, 198);">
                             <option value="" hidden="">Select your route</option>
                             {% for route in routes %}
@@ -32,6 +24,15 @@ Get in your bus|Explorians
                         <label>Boarding Point</label>
                         <select name="bpoint" class="form-control" required="" style="background-color:rgb(214, 198, 198);" >
                             <option value=" " hidden="">Select your boarding point.</option>
+                            {% for bpoint in bpoints %}
+                            <option value={{ bpoint.id }}>{{ bpoint.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <select name="bpoint" class="form-control" required="" style="background-color:rgb(214, 198, 198);" >
+                            <option value=" " hidden="">Select your Destination.</option>
                             {% for bpoint in bpoints %}
                             <option value={{ bpoint.id }}>{{ bpoint.name }}</option>
                             {% endfor %}

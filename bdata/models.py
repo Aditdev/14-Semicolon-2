@@ -3,7 +3,8 @@ from django.db import models
 routes_full = { 
     "M" : "Mumbai",
     "D" : "Delhi",
-}
+    "K" : "kolkata",
+    "H" : "Hyderabad",}
 
 d = "DEF"
 
