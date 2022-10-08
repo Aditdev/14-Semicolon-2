@@ -11,8 +11,17 @@ Get in your bus|Explorians
             <form name="find-form" action={% url 'search' %} method="post" style="padding: 20px;margin: 30px;" >
                     {% csrf_token %}
                     <div class="form-group">
-                        <label>Route</label>
-                        <select name="route" class="form-control" required="" style="background-color: whitesmoke;">
+                        <label>Source</label>
+                        <select name="route" class="form-control" required="" style="background-color: rgb(214, 198, 198);">
+                            <option value="" hidden="">Select your route</option>
+                            {% for route in routes %}
+                            <option value={{ route.id }}>{{ route }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <select name="route" class="form-control" required="" style="background-color:rgb(214, 198, 198);">
                             <option value="" hidden="">Select your route</option>
                             {% for route in routes %}
                             <option value={{ route.id }}>{{ route }}</option>
@@ -21,8 +30,8 @@ Get in your bus|Explorians
                     </div>
                     <div class="form-group">
                         <label>Boarding Point</label>
-                        <select name="bpoint" class="form-control" required="">
-                            <option value="" hidden="">Select your boarding point.</option>
+                        <select name="bpoint" class="form-control" required="" style="background-color:rgb(214, 198, 198);" >
+                            <option value=" " hidden="">Select your boarding point.</option>
                             {% for bpoint in bpoints %}
                             <option value={{ bpoint.id }}>{{ bpoint.name }}</option>
                             {% endfor %}

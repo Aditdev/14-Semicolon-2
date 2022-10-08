@@ -51,6 +51,8 @@ def home(request):
 #         "bpoint" : {"bp": bpoint_selected} 
 #     }
 #     return render(request, 'bdata/bus.html', context=context)
+def signup(request):
+    return render(request,'bdata/signup.html')
 
 def login(request):
     return render(request,'bdata/login.html')

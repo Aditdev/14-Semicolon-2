@@ -27,5 +27,5 @@ urlpatterns = [
     path('updateloc', views.loc, name="updateloc"),
     path('our_team',views.ot,name='our_team'),
     path('login',views.login,name='login/'),
-    path('payment/',views.payment,name='payment/'),
+    path('signup',views.signup,name='signup/'),
 ]

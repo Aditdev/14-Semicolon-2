@@ -1,3 +1,5 @@
+
+
 #side-menu,
 .side-menu-overlay {
     position: fixed;
@@ -144,7 +146,7 @@ body.side-menu-visible #side-menu {
 }
 
 .header-blue {
-    background: linear-gradient(155deg, #76c4e2, rgba(9, 24, 233, 0.877),#a530af);
+    background: linear-gradient(to bottom right, rgb(231, 198, 198),rgb(93, 121, 121),rgb(94, 94, 146));
     background-color: #f39c12;
     padding-bottom: 80px;
     font-family: 'Source Sans Pro', sans-serif

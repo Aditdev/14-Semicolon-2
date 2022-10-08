@@ -28,12 +28,12 @@
 
 </head>
 
-<body style="font-family: Montserrat, sans-serif;">
+<body style="font-family: Montserrat, sans-serif; color: black;">
     <div>
         <div class="header-blue">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search"
                 style="font-family: Montserrat, sans-serif;">
-                <div class="container"><img src="{% static 'img/bus_.png' %}" width="5%" height="5%"><a
+                <div class="container"><img src="{% static 'img/bus_-removebg-preview.png' %}" width="5%" height="5%"><a
                         class="navbar-brand" href={% url 'home' %}>Explorians</a><button data-toggle="collapse"
                         class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
                             navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -44,7 +44,7 @@
                             <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
                                     aria-expanded="false" href="#">More</a>
                                 <div class="dropdown-menu fa-border border-success border-left-12" role="menu"><a
-                                        class="dropdown-item" role="presentation" href="our_team">Our Squad</a><a
+                                        class="dropdown-item" role="presentation" href={% url 'our_team' %}>Our Squad</a><a
                                         class="dropdown-item" role="presentation" href="aboutus">Know us</a><a
                                         class="dropdown-item" role="presentation" href="contactus">Contact Us</a></div>
                             </li>
